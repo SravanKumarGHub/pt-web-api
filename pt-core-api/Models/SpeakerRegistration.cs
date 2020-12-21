@@ -16,7 +16,7 @@ namespace pt_core_api.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Gender { get; set; }
-        public int? Age { get; set; }
+        public int Age { get; set; }
         public string Topic { get; set; }
         public string Country { get; set; }
         public string Theme { get; set; }

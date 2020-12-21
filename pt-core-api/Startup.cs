@@ -32,7 +32,10 @@ namespace pt_core_api
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("http://localhost:4200");
+                                      builder.AllowAnyOrigin()
+                                               .AllowAnyMethod()
+                                               .AllowAnyHeader();
+                                      //builder.WithOrigins("http://localhost:4200");
                                   });
             });
             services.AddControllers();
